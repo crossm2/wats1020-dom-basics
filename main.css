@@ -3,11 +3,57 @@
 html {
     text-align: center;
     padding: 2em;
-    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+	background-image: url("cookie-background.jpeg");
+	    height: 115px;
+    border: 7px solid purple;
 }
 
 .fortune-cookie-saying-wrapper {
-    border: 1px solid #666;
     padding: 1em;
     margin: 1em;
+	
+	
 }
+#fortune-cookie-text {
+	color:purple;
+	font-size: 25px;
+}
+body {
+	font-family: 'Expletus Sans', cursive;
+	color: purple;
+	
+}
+.generate-button {
+  background: purple;
+  background-image: -webkit-linear-gradient(top, purple, #451145);
+  background-image: -moz-linear-gradient(top, purple, #451145);
+  background-image: -ms-linear-gradient(top, purple, #451145);
+  background-image: -o-linear-gradient(top, purple, #451145);
+  background-image: linear-gradient(to bottom, purple, #451145);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Courier New;
+  color: gold;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid purple 2px;
+  text-decoration: none;
+}
+
+.generate-button:hover {
+  background: purple;
+  background-image: -webkit-linear-gradient(top, purple, dark purple);
+  background-image: -moz-linear-gradient(top, purple, dark purple);
+  background-image: -ms-linear-gradient(top, purple, dark purple);
+  background-image: -o-linear-gradient(top, purple, dark purple);
+  background-image: linear-gradient(to bottom, purple, dark purple);
+  text-decoration: none;
+}
+
+.previous-fortunes {
+	border-top:3px solid purple;
+}
+
