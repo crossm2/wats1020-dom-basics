@@ -3,7 +3,6 @@
 // Fortune Cookie Generator
 //
 //////////////////////////////////////////
-
 var generateFortuneCookie = function() {
     // This is where your code for the Fortune Cookie generator goes.
     // You will use the fortunesList variable defined lower in this file
@@ -29,10 +28,36 @@ var generateFortuneCookie = function() {
     // `fortunesList` variable. (HINT: You will use `Math.floor()` and
     // `Math.random()` to accomplish this.) Use this data to update the
     // `innerText` of the `#fortune-cookie-text` element.
-  var random = [Math.floor(Math.random()*fortunesList.length)]; 
-  cookieContainer.innerHTML = fortunesList [random];
+  
+ 
+	
+	var random;
+	do 
+	{
+		random = Math.floor(Math.random()*fortunesList.length);
+		console.log('Try Get the random number');
+		console.log(random);
+	}
+	
+	while (fortuneTracker.indexOf(random) != -1);
+	console.log('Got a new one');
+	console.log(random);
+	fortuneTracker.push(random);
+	
+	console.log("are the lengths the same");
+	console.log(fortuneTracker.length==fortunesList.length);
+	console.log(fortuneTracker.length);
+	console.log(fortunesList.length);
+	if (fortuneTracker.length==fortunesList.length){
+		fortuneTracker = [];
+	}
+	
+	cookieContainer.innerHTML = fortunesList [random];
 	previousFortunesContainer.innerHTML = fortunesList [random];
-}
+};
+
+//create an array to keep track of fortunes used
+var fortuneTracker = [];
 
 // The following data list is provided for you to use in your code.
 var fortunesList = [
